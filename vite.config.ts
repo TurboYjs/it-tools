@@ -17,7 +17,7 @@ import IconsResolver from 'unplugin-icons/resolver';
 import VueI18n from '@intlify/unplugin-vue-i18n/vite';
 
 const baseUrl = process.env.BASE_URL ?? '/';
-
+console.log(baseUrl)
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [

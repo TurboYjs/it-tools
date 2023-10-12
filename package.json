@@ -1,6 +1,6 @@
 {
   "name": "it-tools",
-  "version": "2023.8.21-6f93cba",
+  "version": "0.0.1",
   "description": "Collection of handy online tools for developers, with great UX. ",
   "keywords": [
     "productivity",
@@ -20,8 +20,8 @@
     "url": "https://github.com/CorentinTh/it-tools"
   },
   "scripts": {
-    "dev": "vite",
-    "build": "vue-tsc --noEmit && NODE_OPTIONS=--max_old_space_size=4096 vite build",
+    "dev": "cross-env BASE_URL=/it-tools/ vite",
+    "build": "NODE_OPTIONS=--max_old_space_size=4096 cross-env BASE_URL=/it-tools/ vite build",
     "preview": "vite preview --port 5050",
     "test": "npm run test:unit",
     "test:unit": "vitest --environment jsdom",
@@ -31,7 +31,7 @@
     "typecheck": "vue-tsc --noEmit -p tsconfig.vitest.json --composite false",
     "lint": "eslint src --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --ignore-path .gitignore",
     "script:create-new-tool": "node scripts/create-tool.mjs",
-    "release": "node ./scripts/release.mjs"
+    "release": "bumpp package.json --commit --push --tag --all"
   },
   "dependencies": {
     "@it-tools/bip39": "^0.0.4",
@@ -131,6 +131,8 @@
     "vite-svg-loader": "^4.0.0",
     "vitest": "^0.34.0",
     "workbox-window": "^7.0.0",
-    "zx": "^7.2.1"
+    "zx": "^7.2.1",
+    "cross-env": "7.0.3",
+    "bumpp": "9.1.1"
   }
 }
