@@ -41,6 +41,7 @@ declare module '@vue/runtime-core' {
     'CLink.demo': typeof import('./src/ui/c-link/c-link.demo.vue')['default']
     CModal: typeof import('./src/ui/c-modal/c-modal.vue')['default']
     'CModal.demo': typeof import('./src/ui/c-modal/c-modal.demo.vue')['default']
+    CodePro: typeof import('./src/tools/code-pro/code-pro.vue')['default']
     CollapsibleToolMenu: typeof import('./src/components/CollapsibleToolMenu.vue')['default']
     ColorConverter: typeof import('./src/tools/color-converter/color-converter.vue')['default']
     ColoredCard: typeof import('./src/components/ColoredCard.vue')['default']
