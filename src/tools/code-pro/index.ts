@@ -1,4 +1,4 @@
-import { ArrowsShuffle } from '@vicons/tabler';
+import { IconCodeAsterix } from '@tabler/icons-vue';
 import { defineTool } from '../tool';
 
 export const tool = defineTool({
@@ -7,6 +7,6 @@ export const tool = defineTool({
   description: 'Collaboration coding',
   keywords: ['code', 'collaboration'],
   component: () => import('./code-pro.vue'),
-  icon: ArrowsShuffle,
+  icon: IconCodeAsterix,
   createdAt: new Date('2023-10-12'),
 });

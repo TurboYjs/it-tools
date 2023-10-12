@@ -10,6 +10,9 @@ dependencies:
   '@sindresorhus/slugify':
     specifier: ^2.2.0
     version: 2.2.0
+  '@tabler/icons-vue':
+    specifier: 2.39.0
+    version: 2.39.0(vue@3.3.4)
   '@tiptap/pm':
     specifier: ^2.1.6
     version: 2.1.6
@@ -2439,6 +2442,19 @@ packages:
       magic-string: 0.25.9
       string.prototype.matchall: 4.0.8
     dev: true
+
+  /@tabler/icons-vue@2.39.0(vue@3.3.4):
+    resolution: {integrity: sha512-hNo0cw1E6HTNVLx2dI4+/w0WIlVl+lQv7stuIdTjQw4oPXZEg+rz5gG22eoZZV1rZyAmHXXClM7zbYpcobwmAg==}
+    peerDependencies:
+      vue: '>=3.0.1'
+    dependencies:
+      '@tabler/icons': 2.39.0
+      vue: 3.3.4
+    dev: false
+
+  /@tabler/icons@2.39.0:
+    resolution: {integrity: sha512-iK3j2jIEGIUaJcbYYg5iwyG1Y/m4lzUxAUbxRpvgeXCWP29jvZaH5hajZmU3KaSealddHuJg7PSQislPHpCsoQ==}
+    dev: false
 
   /@tiptap/core@2.1.6(@tiptap/pm@2.1.6):
     resolution: {integrity: sha512-gm8n1oiBhSP6CDhalmmWwLD7yzIUqJJ246/t8rY3o+HJ/I+p0rqCx0mPvMiwcIBmYX8tUCVz7mb9aSFUu/umOQ==}
